@@ -30,12 +30,13 @@
     cursor: pointer;
 }
 .lightbox-inner img {
-    max-height: 80vh;
+    max-height: 65vh;
+    max-width: 100%;
 }
 .close-lightbox {
     position: absolute;
-    top: -18px;
-    right: -17px;
+    top: -15px;
+    right: -15px;
     background: #fff;
     width: 20px;
     height: 20px;
@@ -45,4 +46,9 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+    .lightbox-inner {
+        width: 80%;
+    }
 }
